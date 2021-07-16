@@ -103,9 +103,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "trello-clone-angular"
+  "defaultProject": "trello-clone-angular",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
